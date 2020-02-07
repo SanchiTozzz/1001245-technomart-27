@@ -88,17 +88,16 @@
   		</ul>
   		<h1>Перфораторы</h1>
   		<section>
-  			<h2>Фильтр товаров</h2>
-        <h3>Фильтр:</h3>
+  			<h2>Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Цена:</legend>
             <input type="range" min="0" max="30000">
             <div>
-              <label class="visually-hidden">Минимум</label>
-              <input type="number" name="minimum">
-              <label class="visually-hidden">Максимум</label>
-              <input type="number" name="maximum">
+              <label class="visually-hidden" for="min-number">Минимум</label>
+              <input type="number" name="minimum" id="min-number">
+              <label class="visually-hidden" for="max-number">Максимум</label>
+              <input type="number" name="maximum" id="max-number">
             </div>
           </fieldset>
           <fieldset>
@@ -181,8 +180,8 @@
   						<h3>Перфоратор BOSCH BFG 2000</h3>
   					</a>
             <div>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
   					<p>12500 Р.</p>
   				</li>
