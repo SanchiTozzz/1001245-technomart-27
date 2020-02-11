@@ -2,46 +2,23 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", "PT Sans", sans-serif;
 	font-size: 18px;
+	font-weight: normal;
 	line-height: 18px;
-	color: #000;
+	color: #000000;
 
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 a {
-	color: #fff;
+	color: #ffffff;
 
 	text-decoration: none;
 }
 
-h1 {
-	font-size: 30px;
-	font-weight: normal;
-	line-height: 30px;
-	color: #32425c;
-
-	text-transform: uppercase;
-
-	background-color: #f2f6f8;
-}
-
-legend {
-	font-family: "PT Sans" sans-serif;
-	font-size: 17px;
-	line-height: 30px;
-	font-weight: bold;
-
-	text-transform: uppercase;
-}
-
-.input {
-	font-family: "PT Sans" sans-serif;
-	font-size: 15px;
-	line-height: 20px;
-
-	text-transform: uppercase;
+ul {
+	list-style: none;
 }
 
 .btn {
@@ -58,8 +35,7 @@ legend {
 	background-color: #ca2c37;
 }
 
-.btn:active,
-.btn:focus {
+.btn:active {
 	background-color: #ba2732;
 }
 
@@ -69,7 +45,7 @@ legend {
 .header input[type="search"] {
 	font-size: 17px;
 	line-height: 18px;
-	color: #fff;
+	color: #ffffff;
 
 	background-color: #293449;
 }
@@ -84,13 +60,12 @@ legend {
 }
 
 .header input[type="search"]:focus {
-	color: #000;
+	color: #000000;
 
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
-.header__info:active,
-.header__info:focus {
+.header__info:active {
 	color: #a2a5a9;
 
 	background-color: #161d29;
@@ -103,13 +78,12 @@ legend {
 }
 
 .header__order:hover {
-	color: #fff;
+	color: #ffffff;
 
 	background-color: #5fbb2d;
 }
 
-.header__order:active,
-.header__order:focus {
+.header__order:active {
 	color: #a8c29a;
 
 	background-color: #518534;
@@ -126,35 +100,34 @@ legend {
 	color: #ee3643;
 }
 
-.header__tel {
+.header__aside a {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
 
-	border: 3px solid #fff;
+	border: 3px solid #ffffff;
 }
 
-.header__address {
+.header__aside p {
 	font-size: 14px;
 	line-height: 24px;
 
 	color: #32425c;
 }
 
-.header__user {
+.header__user a {
 	font-size: 21px;
 	line-height: 21px;
-	color: #000;
+	color: #000000;
 
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
-.header__user:hover {
+.header__user a:hover {
 	color: #ee3643;
 }
 
-.header__user:active,
-.header__user:focus {
+.header__user a:active {
 	color: #c5c5c5;
 }
 
@@ -166,14 +139,13 @@ legend {
 	background-color: #32425c;
 }
 
-.header__navigation--link:hover {
-	color: #fff;
+.header__navigation a:hover {
+	color: #ffffff;
 
 	background-color: #293449;
 }
 
-.header__navigation--link:active,
-.header__navigation--link:focus {
+.header__navigation a:active {
 	color: #525a68;
 
 	background-color: #1d2739;
@@ -185,45 +157,43 @@ legend {
 	font-weight: normal;
 }
 
-.company .content {
+.company p {
 	font-family: "PT Sans" sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
 
-.company__list {
+.company__description ul {
 	line-height: 20px;
 }
 
 .footer {
 	line-height: 24px;
-	color: #fff;
+	color: #ffffff;
 
 	background-color: #32425c;
 }
 
-.footer__navigation .item {
+.footer__navigation a {
 	color: #f1f5f7;
 }
 
-.footer__menu .item {
+.footer__menu a {
 	color: #ffd180;
 }
 
-.footer__navigation .item:hover,
-.footer__menu .item:hover {
+.footer__navigation a:hover,
+.footer__menu a:hover {
 	text-decoration: underline;
 }
 
-.footer__navigation .item:active,
-.footer__navigation .item:focus {
+.footer__navigation a:active {
 	text-decoration: none;
 
 	color: #929caa;
 }
 
-.footer__menu .item:active,
-.footer__menu .item:focus {
+.footer__menu a:active {
 	text-decoration: none;
 
 	color: #ad956f;
@@ -233,18 +203,17 @@ legend {
 	font-size: 16px;
 	line-height: 18px;
 
-	color: #fff;
+	color: #ffffff;
 
 	background-color: #293449;
 }
 
-.footer__row .socials {
+.socials a {
 	background-color: #212a3a;
 }
 
-.footer__row .socials:hover,
-.footer__row .socials:active,
-.footer__row .socials:focus {
+.socials a:hover,
+.socials a:active {
 	background-color: #ee3643;
 }
 
@@ -256,8 +225,7 @@ legend {
 	text-decoration: underline;
 }
 
-.footer__row .link:active,
-.footer__row .link:focus {
+.footer__row .link:active {
 	text-decoration: none;
 	color: #ee3643;
 }
@@ -268,9 +236,9 @@ legend {
 .user {
 	font-size: 21px;
 	line-height: 21px;
-	color: #000;
+	color: #000000;
 
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 .user__list a {
@@ -284,10 +252,8 @@ legend {
 	color: #ee3643;
 }
 
-.user:active,
-.user:focus,
-.user__list a:active,
-.user__list a:focus {
+.user:active
+.user__list a:active {
 	color: #b2b2b2;
 }
 
@@ -295,7 +261,7 @@ legend {
 .breadcrumbs__active {
 	font-family: "PT Sans" sans-serif;
 	font-size: 13px;
-	color: #000;
+	color: #000000;
 
 	text-transform: uppercase;
 }
@@ -313,8 +279,7 @@ legend {
 	background-color: #5fbb2d;
 }
 
-.buy:active,
-.buy:focus {
+.buy:active {
 	background-color: #518534;
 }
 
@@ -332,44 +297,95 @@ legend {
 	border: 3px solid #32425c;
 }
 
-.cart:active,
-.cart:focus {
+.cart:active {
 	color: #c1c6ce;
 
 	border: 3px solid #c1c6ce;
 }
 
-.catalog__title {
+.catalog h3 {
 	font-style: "PT Sans" sans-serif;
 	font-size: 18px;
 	line-height: 20px;
-	color: #000;
+	color: #000000;
+
+	text-align: center;
 }
 
-.price__old {
+.catalog span {
 	font-style: "PT Sans" sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	color: #c1c6ce;
+	font-weight: bold;
+	color: #999999;
+
+	text-align: center;
 
 	text-decoration: line-through;
 }
 
-.price__new {
+.catalog p {
 	font-style: "PT Sans" sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	color: #fff;
+	font-weight: bold;
+	color: #ffffff;
+
+	text-align: center;
 
 	text-transform: uppercase;
 
 	background-color: #ee3643;
 }
 
+.filter {
+	font-family: "PT Sans", sans-serif;
 
+	text-transform: uppercase;
+}
 
+.filter legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+}
 
+.input {
+	font-size: 15px;
+	line-height: 20px;
+}
 
+.input:disabled {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.filter button {
+	font-size: 13px;
+
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+	color: #32425c;
+
+	text-transform: uppercase;
+
+	background-color: #f2f6f8;
+}
+
+.subtitle {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	font-width: normal;
+
+	background-color: #f7f3ec;
+}
 
 
 
