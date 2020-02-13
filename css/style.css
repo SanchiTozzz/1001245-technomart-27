@@ -169,11 +169,162 @@ img {
 	background-color: #1d2739;
 }
 
-.company__title {
+.main__features {
+	font-family: "Cuprum", "Arial", sans-serif;	
+}
+
+.features__container h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.features__container a {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features__container a:hover,
+.features__container a:focus {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features__container a:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.materials {
+	background-color: #ffbf47;
+}
+
+.tool {
+	background-color: #3bbce3;
+}
+
+.technic {
+	background-color: #dc91d8;
+}
+
+.discounts {
+	background-color: #8ed78f;
+}
+
+.main__delivery {
+	background-color: #ffc047;
+}
+
+.slider {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slider ul {
+	list-style: none;
+}
+
+.slider h3 {
+	font-size: 36px;
+	line-height: 36px;
+	color: #ffffff;
+
+	text-transform: uppercase;
+}
+
+.slider p {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.title__index {
 	font-family: "Cuprum", "Arial", sans-serif; 
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;
+
+	text-transform: uppercase;
+}
+
+.title__box {
+	background-color: #f9f5f0;
+}
+
+.blue__title {
+	color: #32425c;
+}
+
+.main__manufacturers ul {
+	list-style: none;
+}
+
+.main__services,
+.adv {
+	background-color: #f4f7f9;
+}
+
+.main__services p,
+.adv p {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.main__services ul {
+	list-style: none;
+}
+
+.main__services h3 {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	font-style: normal;
+	color: #32425c;
+
+	text-transform: uppercase;
+}
+
+
+.services__btn {
+	font: inherit;
+
+	display: block;
+
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #ffffff;
+
+	cursor: pointer;
+
+	border: none;
+
+	background-color: #32425c;
+}
+
+.services__btn:hover,
+.services__btn:focus {
+	background-color: #293449;
+}
+
+.active__btn {
+	color: #32425c;
+
+	cursor: default;
+	background-color: #ffffff;
+}
+
+.active__btn:hover,
+.active__btn:focus {
+	color: #32425c;
+
+	cursor: default;	
+	background-color: #ffffff;
 }
 
 .company p {
@@ -349,6 +500,10 @@ img {
 	text-transform: uppercase;
 }
 
+.filter ul {
+	list-style: none;
+}
+
 .filter legend {
 	font-size: 17px;
 	line-height: 30px;
@@ -376,14 +531,72 @@ img {
 	border: 1px solid #e5e5e5;
 }
 
+.sort {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+
+	text-transform: uppercase;
+
+	background-color: #f7f3ec;
+}
+
+.sort h2 {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.sort ul {
+	list-style: none;
+}
+
+.sort__btn {
+	font: inherit;
+
+	display: block;
+
+	color: rgba(0, 0, 0, 0.18);
+	background-color: #f7f3ec;
+
+	border: none;
+
+	text-transform: uppercase;
+
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	text-decoration-color: #ee3643; 
+}
+
+.sort__active {
+	color: #ee3643;
+	text-decoration: none;
+}
+
+.sort__btn:hover,
+.sort__btn:focus {
+	color: #000000;
+
+	text-decoration: underline;
+	text-decoration-color: #ee3643; 
+}
+
+.sort__active:hover,
+.sort__active:focus {
+	color: #ee3643;
+	text-decoration: none;
+}
+
 .catalog {
 	font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.catalog ul {
+	list-style: none;
 }
 
 .catalog h3 {
 	font-size: 18px;
 	line-height: 20px;
-	font-weight: bold;
 	color: #000000;
 
 	text-align: center;
@@ -457,6 +670,45 @@ img {
 	border: 3px solid #c1c6ce;
 }
 
+.catalog__list {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+
+	text-align: center;
+
+	list-style: none;
+}
+
+.catalog__list a {
+	color: #000000;
+
+	text-transform: uppercase;
+
+	border: 1px solid #e5e5e5;
+}
+
+.catalog__list a:hover,
+.catalog__list a:focus {
+	border: 1px solid #bdc6ca;
+}
+
+.catalog__list .active {
+	color: #ffffff;
+
+	border: none;
+	background-color: #ee3643;
+	cursor: default;
+}
+
+.catalog__list .active:hover,
+.catalog__list .active:focus {
+	color: #ffffff;
+
+	cursor: default;
+	border: none;
+	background-color: #ee3643;
+}
 
 
 
