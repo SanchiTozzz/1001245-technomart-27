@@ -12,9 +12,28 @@ a {
 
 img {
 	max-width: 100%;
+	height:auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin:-1px;
+border: 0;
+padding: 0;
+white-space:nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow:hidden;
+background-position: 0 0;
 }
 
 .btn {
+	display: block;
+
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
@@ -111,7 +130,7 @@ img {
 	color: #ee3643;
 }
 
-.header__aside a {
+.header__contacts a {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
@@ -119,7 +138,7 @@ img {
 	border: 3px solid #ffffff;
 }
 
-.header__aside p {
+.header__contacts p {
 	font-size: 14px;
 	line-height: 24px;
 
@@ -294,6 +313,8 @@ img {
 
 	display: block;
 
+	margin: 0;
+
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 21px;
 	font-weight: bold;
@@ -302,9 +323,11 @@ img {
 
 	cursor: pointer;
 
-	border: none;
-
 	background-color: #32425c;
+	border-top: 1px solid #293449;
+	border-bottom: 1px solid #405069;
+	border-left: none;
+	border-right: none;
 }
 
 .services__btn:hover,
@@ -316,7 +339,9 @@ img {
 	color: #32425c;
 
 	cursor: default;
+
 	background-color: #ffffff;
+	border: none;
 }
 
 .active__btn:hover,
@@ -487,7 +512,7 @@ img {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
-	font-width: normal;
+	font-weight: normal;
 
 	text-transform: uppercase;
 
@@ -562,28 +587,29 @@ img {
 
 	text-transform: uppercase;
 
-	text-decoration: underline;
-	text-decoration-style: dashed;
-	text-decoration-color: #ee3643; 
+	border-bottom: dotted 1px #ee3643; 
 }
 
 .sort__active {
 	color: #ee3643;
 	text-decoration: none;
+
+	border: none;
 }
 
 .sort__btn:hover,
 .sort__btn:focus {
 	color: #000000;
 
-	text-decoration: underline;
-	text-decoration-color: #ee3643; 
+	border-bottom: solid 1px #ee3643; 
 }
 
 .sort__active:hover,
 .sort__active:focus {
 	color: #ee3643;
 	text-decoration: none;
+
+	border: none;
 }
 
 .catalog {
