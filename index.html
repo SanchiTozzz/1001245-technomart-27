@@ -21,14 +21,12 @@
           </a>
 
   	  		<form action="https://echo.htmlacademy.ru" method="post" class="header__form">
-            <label class="visually-hidden" for="seek">
-              Поиск
-            </label>
             <input type="text" name="search" id="seek" value="Поиск">
             <label for="seek" class="header__seek">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#ffffff">
                 <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
               </svg>
+              <span class="visually-hidden">Поиск</span>
             </label>
             <button class="visually-hidden" type="submit" tabindex="-1">Искать</button>
           </form>
@@ -142,15 +140,15 @@
 
             <section class="slider">  <!--Слайдер-->
               <h2 class="visually-hidden">Слайдер</h2>
-              <ul>
-                <li class="slider__left">
+              <ul class="slider__list">
+                <li class="mySlides">
                   <div>
                     <h3>Дрели</h3>
                     <p>Соседям на радость!</p>
                   </div>
                   <a href="catalog.html" class="btn slider__btn">Открыть каталог</a>
                 </li>
-                <li class="slider__right visually-hidden">
+                <li class="mySlides">
                   <div>
                     <h3>Перфораторы</h3>
                     <p>Настоящие мужские игрушки</p>
@@ -158,11 +156,11 @@
                   <a href="catalog.html" class="btn slider__btn">Открыть каталог</a>
                 </li>
               </ul>
-              <button type="button" class="right__btn"><span class="visually-hidden">Вправо</span></button>
-              <button type="button" class="left__btn"><span class="visually-hidden">Влево</span></button>
+              <button type="button" class="right__btn" onclick="plusSlides(-1)"><span class="visually-hidden">Вправо</span></button>
+              <button type="button" class="left__btn" onclick="plusSlides(1)"><span class="visually-hidden">Влево</span></button>
               <div class="slider__radio">
-                <button type="button" class="slider__radio__left active"></button>
-                <button type="button" class="slider__radio__right"></button>
+                <button type="button" class="dot" onclick="currentSlide(1)"><span class="visually-hidden">Первый слайд</span></button>
+                <button type="button" class="dot" onclick="currentSlide(2)"><span class="visually-hidden">Второй слайд</span></button>
               </div>  
             </section>
 
@@ -305,26 +303,27 @@
 
             <ul class="services__list">
               <li>
-                <button type="button" class="services__btn active__btn">Доставка</button>
+                <button type="button" class="services__btn dotServices" onclick="currentServices(1)">Доставка</button>
               </li>
               <li>
-                <button type="button" class="services__btn">Гарантия</button>
+                <button type="button" class="services__btn dotServices" onclick="currentServices(2)">Гарантия</button>
               </li>
               <li>
-                <button type="button" class="services__btn">Кредит</button>
+                <button type="button" class="services__btn dotServices" onclick="currentServices(3)">Кредит</button>
               </li>
             </ul>
 
             <ul class="services__description">
-              <li class="services__description--delivery">
+              <li class="services__description--delivery myServices">
                 <div>
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!</p>
                 </div>
               </li>
-              <li class="visually-hidden services__description--guarantee">
+              <li class="services__description--guarantee myServices">
                 <div>
                   <h3>Гарантия</h3>
                   <p>Если купленный у нас товар поломается или заискрит,<br>
@@ -332,7 +331,7 @@
                   Дом уж восстановите как-нибудь сами.</p>
                 </div>
               </li>
-              <li class="visually-hidden services__description--credit">
+              <li class="services__description--credit myServices">
                 <div>
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще!<br>
@@ -369,10 +368,10 @@
       		<section class="company__description">  <!--Контакты-->
       			<h2 class="title__index">Контакты</h2>
       			<p class="paragraph__company__3">Вы можете забрать товар сами, заехав в наш офис:</p>
-      			<a href="#" class="company__map">
+      			<button class="company__map" id="myBtnMap">
               <img src="img/map.png" width="300" height="158" alt="ул. Большая Конюшенная, д. 19">
-            </a>
-      			<a href="#" class="btn btn__2">Заблудились? Напишите нам!</a>
+            </button>
+      			<button class="btn btn__2" id="myBtnAppl">Заблудились? Напишите нам!</button>
       		</section>
 
       </div>
@@ -435,30 +434,42 @@
   		</div>
   	</footer>
     <!--Попапы-->
-    <section class="visually-hidden">
-      <h2>Заявка</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="user-name">Ваше имя:</label>
-          <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user-mail">Ваш e-mail:</label>
-          <input type="email" name="email" id="user-mail" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="review">Текст письма:</label>
-          <textarea id="review" name="comment" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-      <button type="button"><span class="visually-hidden">Закрыть</span></button>
-    </section>
-    <section class="visually-hidden">
-      <h2>Карта</h2>
-      <img src="img/big_map.png" width="940" height="446" alt="ул. Большая Конюшенная, д. 19">
-      <button type="button"><span class="visually-hidden">Закрыть</span></button>
+
+    <section class="application" id="myApplication">
+      <div>
+        <h2 class="visually-hidden">Заявка</h2>
+        <form action="https://echo.htmlacademy.ru" method="post" class="application__form">
+
+          <div>
+            <p>
+              <label for="user-name">Ваше имя:</label>
+              <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="user-mail">Ваш e-mail:</label>
+              <input type="email" name="email" id="user-mail" placeholder="email@example.com">
+            </p>
+          </div>
+
+          <p class="application__arial">
+            <label for="review">Текст письма:</label>
+            <textarea id="review" name="comment" placeholder="В свободной форме"></textarea>
+          </p>
+          <div class="application__bottom">
+            <button type="submit" class="btn">Отправить</button>
+          </div>
+        </form>
+        <button type="button" class="close__btn application__btn" id="closeAppl"><span class="visually-hidden">Закрыть</span></button>
+      </div>
     </section>
 
+    <section class="big__map container" id="myModalMap">
+      <div>
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="img/big_map.png" width="970" height="446" alt="ул. Большая Конюшенная, д. 19">
+        <button type="button" class="close__btn" id="closeMap"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
