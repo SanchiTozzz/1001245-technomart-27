@@ -27,6 +27,24 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// var next = document.querySelector(".next");
+// var prev = document.querySelector(".prev");
+// var dot1 = document.querySelector(".dot__1");
+// var dot2 = document.querySelector(".dot__2");
+
+// next.addEventListener ("click", function() {
+//   plusSlides(1);
+// })
+// prev.addEventListener ("click", function() {
+//   plusSlides(-1);
+// })
+// dot1.addEventListener ("click", function() {
+//   currentSlide(1);
+// })
+// dot2.addEventListener ("click", function() {
+//   currentSlide(2);
+// })
+
 // Слайдер преимуществ
 
 var slideServices = 1;
@@ -52,42 +70,4 @@ function showServices(n) {
   dotsServices[slideServices-1].className += " active__btn";
 }
 
-// Карта
-
-var modalMap = document.getElementById("myModalMap");
-
-var btnMap = document.getElementById("myBtnMap");
-
-var closeMap = document.getElementById("closeMap");
-
-btnMap.onclick = function() {
-  modalMap.style.display = "block";
-}
-
-closeMap.onclick = function() {
-  modalMap.style.display = "none";
-}
-
-// Форма заявки
-
-var modalApplication = document.getElementById("myApplication");
-
-var btn = document.getElementById("myBtnAppl");
-
-var closeAppl = document.getElementById("closeAppl");
-
-btn.onclick = function() {
-  modalApplication.style.display = "block";
-}
-
-closeAppl.onclick = function() {
-  modalApplication.style.display = "none";
-}
-
-// function openForm() {
-//   document.getElementsByClassName("application").style.display = "block";
-// }
-
-// function closeSection() {
-//   document.getElementById("application").style.display = "none";
-// }
+// ПОПАПЧИКИ
