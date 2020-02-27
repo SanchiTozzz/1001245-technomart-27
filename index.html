@@ -141,14 +141,14 @@
             <section class="slider">  <!--Слайдер-->
               <h2 class="visually-hidden">Слайдер</h2>
               <ul class="slider__list">
-                <li class="mySlides">
+                <li class="my__slider">
                   <div>
                     <h3>Дрели</h3>
                     <p>Соседям на радость!</p>
                   </div>
                   <a href="catalog.html" class="btn slider__btn">Открыть каталог</a>
                 </li>
-                <li class="mySlides">
+                <li class="my__slider">
                   <div>
                     <h3>Перфораторы</h3>
                     <p>Настоящие мужские игрушки</p>
@@ -156,11 +156,11 @@
                   <a href="catalog.html" class="btn slider__btn">Открыть каталог</a>
                 </li>
               </ul>
-              <button type="button" class="slider__arrows right__btn next" onclick="plusSlides(-1)"><span class="visually-hidden">Вправо</span></button>
-              <button type="button" class="slider__arrows left__btn prev" onclick="plusSlides(1)"><span class="visually-hidden">Влево</span></button>
+              <button type="button" class="slider__arrows right__btn"><span class="visually-hidden">Вправо</span></button>
+              <button type="button" class="slider__arrows left__btn"><span class="visually-hidden">Влево</span></button>
               <div class="slider__radio">
-                <button type="button" class="dot dot__1" onclick="currentSlide(1)"><span class="visually-hidden">Первый слайд</span></button>
-                <button type="button" class="dot dot__2" onclick="currentSlide(2)"><span class="visually-hidden">Второй слайд</span></button>
+                <button type="button" class="dot dot__1"><span class="visually-hidden">Первый слайд</span></button>
+                <button type="button" class="dot dot__2"><span class="visually-hidden">Второй слайд</span></button>
               </div>  
             </section>
 
@@ -303,18 +303,18 @@
 
             <ul class="services__list">
               <li>
-                <button type="button" class="services__btn dotServices" onclick="currentServices(1)">Доставка</button>
+                <button type="button" class="services__btn services__1">Доставка</button>
               </li>
               <li>
-                <button type="button" class="services__btn dotServices" onclick="currentServices(2)">Гарантия</button>
+                <button type="button" class="services__btn services__2">Гарантия</button>
               </li>
               <li>
-                <button type="button" class="services__btn dotServices" onclick="currentServices(3)">Кредит</button>
+                <button type="button" class="services__btn services__3">Кредит</button>
               </li>
             </ul>
 
             <ul class="services__description">
-              <li class="services__description--delivery myServices">
+              <li class="services__description--delivery my__services">
                 <div>
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>
@@ -323,7 +323,7 @@
                   поднимая его на ваш этаж!</p>
                 </div>
               </li>
-              <li class="services__description--guarantee myServices">
+              <li class="services__description--guarantee my__services">
                 <div>
                   <h3>Гарантия</h3>
                   <p>Если купленный у нас товар поломается или заискрит,<br>
@@ -331,7 +331,7 @@
                   Дом уж восстановите как-нибудь сами.</p>
                 </div>
               </li>
-              <li class="services__description--credit myServices">
+              <li class="services__description--credit my__services">
                 <div>
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще!<br>
@@ -475,6 +475,7 @@
     <script src="js/slider.js"></script>
     <script src="js/application.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/services.js"></script>
 
   </body>
 </html>
