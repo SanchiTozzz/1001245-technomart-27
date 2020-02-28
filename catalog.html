@@ -157,14 +157,19 @@
           <form class="filter" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="price">
               <legend>Цена:</legend>
-              <div class="range">
-                <input type="range" min="0" max="30000">
-              </div>
-              <div>
-                <label class="visually-hidden" for="min-number">Минимум</label>
-                <input type="number" name="minimum" id="min-number">
-                <label class="visually-hidden" for="max-number">Максимум</label>
-                <input type="number" name="maximum" id="max-number">
+              <div class="range__filter">
+                <div class="range__controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle__min"></div>
+                  <div class="toggle toggle__max"></div>
+                </div>
+                <div class="price__controls">
+                  <label class="min__price"><span class="visually-hidden">от</span><input name="min-price" type="text" value="0"></label>
+                  <div class="between__price"></div>
+                  <label class="max__price"><span class="visually-hidden">до</span><input name="max-price" type="text" value="30000"></label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="manufacture">
@@ -172,27 +177,47 @@
               <ul>
                 <li>
                   <label class="input">
-                    <input type="checkbox" name="Bosch"> Bosch
+                    <input type="checkbox" name="Bosch" class="visually-hidden"> Bosch
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                    </svg>
+                    <span class="icon__check"></span>
                   </label>
                 </li>
                 <li>
                   <label class="input">
-                    <input type="checkbox" name="Interskol"> Интерскол
+                    <input type="checkbox" name="Interskol" class="visually-hidden"> Интерскол
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                    </svg>
+                    <span class="icon__check"></span>
                   </label>
                 </li>
                 <li>
                   <label class="input">
-                    <input type="checkbox" name="Makita"> Makita
+                    <input type="checkbox" name="Makita" class="visually-hidden"> Makita
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                    </svg>
+                    <span class="icon__check"></span>
                   </label>
                 </li>
                 <li>
                   <label class="input">
-                    <input type="checkbox" name="Dewalt"> Dewalt
+                    <input type="checkbox" name="Dewalt" class="visually-hidden"> Dewalt
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                    </svg>
+                    <span class="icon__check"></span>
                   </label>
                 </li>
                 <li>
-                  <label class="input">
-                    <input type="checkbox" name="Hitachi"> Hitachi
+                  <label class="input last__input">
+                    <input type="checkbox" name="Hitachi" class="visually-hidden"> Hitachi
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                    </svg>
+                    <span class="icon__check"></span>
                   </label>
                 </li>
               </ul>   
@@ -202,12 +227,20 @@
               <ul>
                 <li>
                   <label class="input">
-                    <input type="radio" name="power" value="Rechargeable"> Аккумуляторные
+                    <input type="radio" name="power" value="Rechargeable" class="visually-hidden"> Аккумуляторные
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      <path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                    </svg>
+                    <span class="icon__check"></span>
                   </label>
                 </li>
                 <li>
                   <label class="input">
-                    <input type="radio" name="power" value="networking"> Сетевые
+                    <input type="radio" name="power" value="networking" class="visually-hidden"> Сетевые
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      <path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                    </svg>
+                    <span class="icon__check"></span>
                   </label>
                 </li>
               </ul> 
