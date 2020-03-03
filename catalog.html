@@ -34,7 +34,7 @@
             Закладки: 0
           </a>
 
-          <a href="#" class="header__info basket">
+          <a href="#" class="header__info basket basket__red">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
               <g>
@@ -456,18 +456,20 @@
     </footer>
 
     <!--Попапы-->
-    <section class="visually-hidden">
-      <h2>Уведомление</h2>
-      <p>Товар добавлен в корзину!</p>
-      <ul>
-        <li>
-          <a href="#">Оформить Заказ</a>
-        </li>
-        <li>
-          <a href="#">Продолжить покупки</a>
-        </li>
-      </ul>
-      <button type="button"><span class="visually-hidden">Закрыть</span></button>
+    <section class="application notification">
+        <h2 class="visually-hidden">Уведомление</h2>
+        <p>Товар добавлен в корзину!</p>
+        <ul class="application__bottom">
+          <li>
+            <a href="#" class="notification__link red__link">Оформить Заказ</a>
+          </li>
+          <li>
+            <a href="#" class="notification__link white__link">Продолжить покупки</a>
+          </li>
+        </ul>
+        <button type="button" class="close__btn notification__btn"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+    <script src="js/catalog.js"></script>
   </body>
 </html>

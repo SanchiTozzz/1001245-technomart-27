@@ -218,6 +218,10 @@ background-position: 0 0;
   	opacity: 0.3;
 }
 
+.basket__red {
+	background-color: #ee3643;
+}
+
 .bookmark:hover::before,
 .bookmark:focus::before,
 .basket:hover svg,
@@ -2303,6 +2307,88 @@ input[type="radio"]:checked + .icon__radio::before {
 	padding: 0;
 
 	background-color: #f4f4f4;
+}
+
+.notification {
+	display: none;
+	min-height: 280px;
+}
+
+.notification::after {
+	content: "";
+
+	position: absolute;
+
+	top: 55px;
+	left: 81px;
+
+	width: 66px;
+	height: 66px;
+
+	background-image: url("../img/modal-check.svg");
+}
+
+.notification__btn {
+	top: 16px;
+	right: 9px;
+}
+
+.notification p {
+	font-size: 30px;
+	line-height: 30px;
+
+	margin: 0;
+	margin-top: 74px;
+	margin-left: 179px;
+}
+
+.notification .application__bottom {
+	display: flex;
+	justify-content: space-between;
+
+	height: 112px;
+	width: 100%;
+	margin-left: 0;
+	margin-top: 67px;
+	margin-bottom: 0;
+	padding: 0 80px;
+
+	background-color: #f4f4f4;
+
+	list-style: none;
+}
+
+.notification li {
+	font-size: 14px;
+	line-height: 18px;
+
+	text-transform: uppercase;
+}
+
+.notification__link {
+	display: block;
+
+	width: 220px;
+	height: 38px;
+
+	margin-top: 37px;
+	padding: 10px 0;
+
+	text-align: center;
+
+	border-radius: 2px;
+}
+
+.red__link {
+	background-color: #ee3643;
+
+	color: #ffffff;
+}
+
+.white__link {
+	background-color: #ffffff;
+
+	color: #000000;
 }
 
 @keyframes bounce {
