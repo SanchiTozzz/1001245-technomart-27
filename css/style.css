@@ -290,7 +290,7 @@ background-position: 0 0;
 	line-height: 23px;
 	color: #ee3643;
 
-	width: 196px;
+	width: 197px;
 
 	margin-top: 0px;
 	margin-right: 71px;
@@ -336,7 +336,7 @@ background-position: 0 0;
 }
 
 .header__contacts p {
-	margin-top: 9px;
+	margin-top: 5px;
 	margin-bottom: 0;
 
 	line-height: 24px;
@@ -419,7 +419,7 @@ background-position: 0 0;
 
 .header__navigation {
 	min-height: 60px;
-	margin-top: 40px;
+	margin-top: 38px;
 	padding: 0 10px;
 
 	font-size: 17px;
@@ -439,13 +439,10 @@ background-position: 0 0;
 	box-shadow: inset 0px -5px 0 0 #293449;
 }
 
-.header__navigation li {
-}
-
 .header__navigation a {
 	display: block;
 
-	padding: 20px 33.5px;
+	padding: 21px 33.5px 22px;
 
 	color: #ffffff;
 }
@@ -623,7 +620,8 @@ background-position: 0 0;
 	height: 266px;
 }
 
-.slider__list-nojs .my__slider:first-child {
+.slider__list-nojs .my__slider:first-child,
+.slider__list-nojs .my__services:first-child {
 	display: block;
 }
 
@@ -882,7 +880,7 @@ background-position: 0 0;
 
 	position: relative;
 
-	margin-top: 69px;
+	margin-top: 55px;
 }
 
 .main__services h3 {
@@ -1036,16 +1034,16 @@ background-position: 0 0;
 }
 
 .paragraph__company__1 {
-	margin-bottom: 29px;
+	margin-bottom: 23px;
 }
 
 .paragraph__company__2 {
-	max-width: 386px;
+	max-width: 387px;
 }
 
 .paragraph__company__3 {
 	max-width: 179px;
-	margin-bottom: 35px;
+	margin-bottom: 31px;
 }
 
 .company__description {
@@ -1055,6 +1053,8 @@ background-position: 0 0;
 .company__description ul {
 	font-size: 18px;
 	line-height: 20px;
+	margin: 0;
+	margin-top: 21px;
 	padding: 0;
 
 	list-style: none;
@@ -1204,7 +1204,7 @@ background-position: 0 0;
 
 .footer__row p {
 	margin: 0;
-	margin-top: 38px;
+	margin-top: 32px;
 	margin-bottom: 34px;
 }
 
@@ -1234,7 +1234,7 @@ background-position: 0 0;
 	margin: 0 auto;
 	padding: 0;
 	margin-left: 0;
-	margin-right: 118px;
+	margin-right: 116px;
 
 	width: 135px;
 }
@@ -1436,6 +1436,10 @@ background-position: 0 0;
 }
 
 .title {
+	width: 940px;
+
+	margin-top: 21px;
+
 	padding-top: 28px;
 	padding-left: 30px;
 	padding-bottom: 28px;
@@ -1755,15 +1759,21 @@ input[type="radio"]:checked + .icon__radio::before {
 }
 
 .sort__1 {
+	width: 355px;
 	margin-right: 46px;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .sort__1 li {
-	margin: 0;
-	margin-right: 68px;
+	margin: 0 34px;
 }
 
-.sort__1 li:last-child {
+.sort__1 li:first-child {
+	margin-left: 0;
+}
+
+.sort__1 li:nth-child(3) {
 	margin-right: 0;
 }
 

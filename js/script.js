@@ -56,6 +56,7 @@ var services2 = document.querySelector(".services__2");
 var services3 = document.querySelector(".services__3");
 var services = document.querySelectorAll(".my__services");
 var dotsServices = document.querySelectorAll(".services__btn");
+var servicesDescription = document.querySelector(".services__description");
 var slideServices = 1;
 
 services1.addEventListener("click", function() {
@@ -77,6 +78,7 @@ function currentServices(n) {
 }
 
 function showServices(n) {
+  servicesDescription.classList.remove("slider__list-nojs");
   if (n > services.length) {slideServices = 1}    
   if (n < 1) {slideServices = services.length}
   for (a = 0; a < services.length; a++) {
