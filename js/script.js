@@ -94,14 +94,11 @@ function showServices(n) {
 // ПОПАП ФОРМА
 
 var btn = document.querySelector(".btn__2");
-
 var application = document.querySelector(".application");
 var close = application.querySelector(".close__btn");
-
 var form = application.querySelector("form");
 var login = application.querySelector("[name=name]");
 var email = application.querySelector("[name=email]");
-
 var isStorageSupport = true;
 var storage = "";
 
@@ -154,7 +151,6 @@ window.addEventListener("keydown", function (evt) {
 // ПОПАП КАРТА
 
 var link = document.querySelector(".company__map");
-
 var map = document.querySelector(".big__map");
 var close = map.querySelector(".close__btn");
 
