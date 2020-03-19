@@ -1487,7 +1487,7 @@ background-position: 0 0;
 
 	padding-top: 28px;
 	padding-left: 30px;
-	padding-bottom: 28px;
+	padding-bottom: 31px;
 
 	font-size: 30px;
 	font-weight: normal;
@@ -1504,12 +1504,14 @@ background-position: 0 0;
 	font-size: 13px;
 	font-weight: normal;
 
+	height: 38px;
+
 	text-transform: uppercase;
 
 	background-color: #f7f3ec;
 
 	padding-top: 11px;
-	padding-bottom: 12px;
+	padding-bottom: 10px;
 	padding-left: 18px;
 
 	margin-top: 20px;
@@ -1771,6 +1773,8 @@ input[type="radio"]:checked + .icon__radio::before {
 
 .sort {
 	display: flex;
+
+	height: 38px;
 	padding: 0;
 
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -1803,7 +1807,7 @@ input[type="radio"]:checked + .icon__radio::before {
 	display: flex;
 	margin: 0;
 	padding:0;
-	padding-top: 11px;
+	padding-top: 9px;
 
 	list-style: none;
 }
@@ -2133,7 +2137,7 @@ input[type="radio"]:checked + .icon__radio::before {
 .pagination__list {
 	display: flex;
 
-	margin-top: 32px;
+	margin-top: 31px;
 	margin-bottom: 60px;
 	padding: 0;
 
